@@ -1,0 +1,114 @@
+/* Custom CSS for advanced styling */
+
+/* Table styling */
+.custom-table {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-table th {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .custom-table td {
+    font-size: 15px;
+    padding: 12px 15px;
+    color: #333;
+  }
+  
+  .custom-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Hover effects */
+  .custom-table tr:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .custom-table td, .custom-table th {
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  /* Button styling */
+  .btn {
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: none;
+    width: 120px;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Activate button (Green) */
+  .btn-activate {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .btn-activate:hover {
+    background-color: #218838;
+  }
+  
+  /* Deactivate button (Red) */
+  .btn-deactivate {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .btn-deactivate:hover {
+    background-color: #c82333;
+  }
+  
+  /* Add some spacing and border-radius to the buttons */
+  button {
+    margin: 5px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .custom-table th, .custom-table td {
+      font-size: 14px;
+    }
+  
+    .btn {
+      font-size: 13px;
+      padding: 8px 16px;
+    }
+  
+    .container {
+      padding: 20px;
+    }
+  }
+  
+  /* Animations for rows */
+  @keyframes rowAnimation {
+    0% {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .animated-row {
+    animation: rowAnimation 0.5s ease-in-out;
+  }
+  

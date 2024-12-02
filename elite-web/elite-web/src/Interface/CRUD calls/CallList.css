@@ -1,0 +1,115 @@
+/* General container styling */
+.call-list-container {
+    padding: 20px;
+    background-color: #ffffff; /* White background for a clean, bright look */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styling */
+  header h2 {
+    font-size: 1.8rem;
+    color: #333; /* Dark gray for readability */
+    margin-bottom: 20px;
+  }
+  
+  .add-call-button {
+    background-color: #f57c00; /* Orange for the Add button */
+    color: white;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-call-button:hover {
+    background-color: #e65100; /* Darker orange on hover */
+  }
+  
+  /* Call List styling */
+  .call-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .call-card {
+    background-color: #ffffff; /* White background for each card */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px); /* 3 cards per row */
+    margin-bottom: 20px;
+    border-left: 5px solid #1e73be; /* Blue border on the left (professional blue color) */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .call-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .call-card h5 {
+    font-size: 1.2rem;
+    color: #333; /* Dark gray for title */
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .call-card p {
+    font-size: 1rem;
+    color: #555; /* Slightly lighter gray for description */
+    line-height: 1.6;
+  }
+  
+  .call-card strong {
+    font-weight: bold;
+    color: #1e73be; /* Highlight important text with blue */
+  }
+  
+  .call-card .call-info {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .call-card .call-info span {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .edit-button {
+    background-color: #1e73be; /* Blue background for edit button */
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-button:hover {
+    background-color: #155a8a; /* Darker blue on hover */
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .call-list {
+      justify-content: center;
+    }
+    
+    .call-card {
+      width: calc(50% - 20px); /* 2 cards per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .call-card {
+      width: 100%; /* 1 card per row on small screens */
+    }
+  }
+  

@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eef2f3;
+    color: #333;
+  }
+  
+  .homepage {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .homepage-header {
+    background-color: #004080;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  .hero {
+    text-align: center;
+    background: linear-gradient(to bottom, #004080, #0070c0);
+    color: white;
+    padding: 5rem 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    margin: 1rem 0;
+  }
+  
+  .cta-button {
+    background-color: #ff8000;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-color: #cc6600;
+  }
+  
+  .dashboard-section, .tools-section {
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .dashboard-section h2, .tools-section h2 {
+    color: #004080;
+  }
+  
+  .tools-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .tools-section li {
+    margin: 0.5rem 0;
+  }
+  
+  .homepage-footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+  }
+  
+  .homepage-footer a {
+    color: #ff8000;
+    text-decoration: none;
+  }
+  
+  .homepage-footer a:hover {
+    text-decoration: underline;
+  }
+  

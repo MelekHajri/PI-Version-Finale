@@ -1,0 +1,171 @@
+/* ---------- Global Variables ---------- */
+:root {
+    --color-gray-900: #1e1e1e;
+    --color-gray-800: #2e2e2e;
+    --color-gray-700: #3e3e3e;
+    --color-gray-600: #e60f0f;
+    --color-gray-300: #d1d1d1;
+    --color-gray-100: #f7f7f7;
+    --color-white: #ffffff;
+  
+    --color-blue-900: #486dc4;
+    --color-blue-800: #0f1d83;
+    --color-blue-700: #000000;
+    --color-blue-500: #27659b;
+  
+    --color-orange-500: #ff9800;
+  
+    --color-green-500: #4bd9cd;
+    --color-olive-500: #00a26a;
+  }
+  
+/* ---------- App Layout ---------- */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background-color: var(--color-gray-100);
+    color: var(--color-gray-900);
+}
+  
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--color-blue-900);
+}
+
+.app-header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.logo-title span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+.app-header-navigation .tabs {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.tabs a {
+    padding: 10px 15px;
+    color: var(--color-gray-300);
+    font-size: 0.875rem;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tabs a.active,
+.tabs a:hover {
+    color: var(--color-white);
+    background-color: var(--color-orange-500);
+}
+
+.app-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-profile img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+/* ---------- Body Layout ---------- */
+.app-body {
+    display: flex;
+    flex: 1;
+}
+
+.app-body-navigation {
+    width: 240px;
+    background-color: var(--color-blue-900);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navigation a {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: var(--color-gray-300);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navigation a:hover {
+    background-color: var(--color-blue-700);
+    color: var(--color-orange-500);
+}
+
+.navigation a i {
+    margin-right: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--color-blue-800);
+    font-size: 0.75rem;
+    color: var(--color-gray-300);
+}
+
+/* ---------- Compte Table ---------- */
+.compte-section {
+    margin: 20px 0;
+}
+
+.compte-section h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: var(--color-gray-900);
+}
+
+.compte-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    background-color: var(--color-white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.compte-table th, .compte-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--color-gray-300);
+}
+
+.compte-table th {
+    background-color: var(--color-blue-800);
+    color: var(--color-white);
+}
+
+.compte-table tbody tr:hover {
+    background-color: var(--color-gray-100);
+}
